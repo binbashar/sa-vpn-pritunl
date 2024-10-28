@@ -1,2 +1,3 @@
 ---
-# defaults file for sa-vpn-pritunl
+# No releases for Lunar (Ubuntu 23) so in that case we are using Jammy
+pritunl_distribution_release: "{{ 'jammy' if ansible_distribution_release == 'lunar' else ansible_distribution_release }}"

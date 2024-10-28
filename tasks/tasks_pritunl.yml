@@ -86,7 +86,7 @@
 
     - name: PRITUNL | Install pritunl repo
       apt_repository:
-        repo: "deb http://repo.pritunl.com/stable/apt {{ ansible_distribution_release }} main"
+        repo: "deb https://repo.pritunl.com/stable/apt {{ pritunl_distribution_release }} main"
         state: present
         filename: pritunl
       become: yes
